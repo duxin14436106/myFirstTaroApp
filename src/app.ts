@@ -2,9 +2,13 @@ import { Component, PropsWithChildren } from 'react'
 import './app.scss'
 
 class App extends Component<PropsWithChildren> {
+  componentDidMount () {
+    console.log('componentDidMount')
+  }
 
-  componentDidMount () {}
-
+  onLaunch() {
+    console.log('onLaunch')
+  }
   componentDidShow () {}
 
   componentDidHide () {}
